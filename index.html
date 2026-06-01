@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore ITI trades, curriculum, eligibility, apprenticeship options, and career opportunities.">
+  <title>ITI Trades Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="ITI Trades Portal home">
+      <img src="assets/logo.png" alt="Institute logo" class="brand-logo">
+      <span class="brand-text">
+        <strong>Government ITI Trades Portal</strong>
+        <small>Skills for careers, industry, and entrepreneurship</small>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="index.html">Trades</a>
+      <a href="#contact">Contact</a>
+      <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch language">తెలుగు</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">Industrial Training Institute</span>
+        <h1>Find the right trade for your future.</h1>
+        <p>Search ITI trades by discipline, compare eligibility and duration, then open detailed curriculum and career information.</p>
+      </div>
+      <div class="hero-panel" aria-label="Portal highlights">
+        <div>
+          <strong id="totalTrades">0</strong>
+          <span>Trades</span>
+        </div>
+        <div>
+          <strong id="itiTrades">0</strong>
+          <span>ITI Trades</span>
+        </div>
+        <div>
+          <strong id="atcTrades">0</strong>
+          <span>ATC Trades</span>
+        </div>
+        <div>
+          <strong>2</strong>
+          <span>Languages</span>
+        </div>
+        <div>
+          <strong>100%</strong>
+          <span>Static Hosting Ready</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="definition-band" aria-label="ITI and ATC definitions">
+      <article class="definition-item">
+        <span>ITI</span>
+        <h2>Industrial Training Institute</h2>
+        <p>Industrial Training Institutes are government-backed vocational schools that provide hands-on practical training in technical and non-technical trades such as Electrician, COPA, and Draughtsman Civil. These courses help students become job-ready for different industries.</p>
+      </article>
+      <article class="definition-item">
+        <span>ATC</span>
+        <h2>Advanced Technology Centre</h2>
+        <p>Advanced Technology Centres are modern upgraded ITI training facilities introduced through government partnerships with major industry groups such as Tata Technologies. ATCs focus on high-tech, current industry-demand skills beyond older traditional courses.</p>
+      </article>
+    </section>
+
+    <section class="controls-section" aria-label="Search and filter trades">
+      <label class="search-field" for="searchInput">
+        <span>Search trades</span>
+        <input id="searchInput" type="search" placeholder="Search by trade name or category">
+      </label>
+
+      <div class="filter-tabs" id="categoryFilters" role="list" aria-label="Trade categories">
+        <button class="filter-tab active" type="button" data-category="All">All</button>
+        <button class="filter-tab" type="button" data-category="IT">IT</button>
+        <button class="filter-tab" type="button" data-category="Electrical">Electrical</button>
+        <button class="filter-tab" type="button" data-category="Mechanical">Mechanical</button>
+        <button class="filter-tab" type="button" data-category="Civil">Civil</button>
+        <button class="filter-tab" type="button" data-category="Fashion">Fashion</button>
+        <button class="filter-tab" type="button" data-category="Emerging Technologies">Emerging Technologies</button>
+      </div>
+    </section>
+
+    <section class="results-bar" aria-live="polite">
+      <h2>Available Trades</h2>
+      <p id="resultCount">Loading trades...</p>
+    </section>
+
+    <section class="trade-results" id="tradeGrid" aria-label="ITI and ATC trade list"></section>
+    <p class="empty-state" id="emptyState" hidden>No trades found. Try a different search or category.</p>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div>
+      <strong>Government ITI Trades Portal</strong>
+      <p>Static information portal for ITI and ATC trade exploration.</p>
+    </div>
+  </footer>
+
+  <script src="js/trades-fallback.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
