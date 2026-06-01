@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="ITI workshop illustration">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#d7ecff"/>
+      <stop offset="1" stop-color="#74c7d8"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#dfe8ef"/>
+      <stop offset="1" stop-color="#b9c8d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <rect y="610" width="1600" height="290" fill="url(#floor)"/>
+  <rect x="100" y="130" width="1400" height="480" rx="20" fill="#eef6ff" opacity=".75"/>
+  <g fill="#7ea8c9" opacity=".5">
+    <rect x="180" y="190" width="230" height="150" rx="12"/>
+    <rect x="455" y="190" width="230" height="150" rx="12"/>
+    <rect x="730" y="190" width="230" height="150" rx="12"/>
+    <rect x="1005" y="190" width="230" height="150" rx="12"/>
+    <rect x="1280" y="190" width="130" height="150" rx="12"/>
+  </g>
+  <g transform="translate(250 500)">
+    <rect x="0" y="0" width="310" height="64" rx="8" fill="#174a7c"/>
+    <rect x="28" y="-170" width="250" height="170" rx="12" fill="#f4b64a"/>
+    <rect x="54" y="-138" width="198" height="104" rx="8" fill="#083e73"/>
+    <circle cx="82" cy="-86" r="16" fill="#19a89d"/>
+    <rect x="112" y="-96" width="104" height="18" rx="9" fill="#cde8ff"/>
+  </g>
+  <g transform="translate(680 455)">
+    <rect x="0" y="50" width="330" height="120" rx="12" fill="#0b68d1"/>
+    <rect x="45" y="-70" width="240" height="120" rx="16" fill="#ffffff"/>
+    <rect x="74" y="-38" width="182" height="56" rx="8" fill="#19a89d"/>
+    <circle cx="72" cy="112" r="30" fill="#0b315f"/>
+    <circle cx="258" cy="112" r="30" fill="#0b315f"/>
+  </g>
+  <g transform="translate(1110 470)">
+    <rect x="0" y="10" width="250" height="90" rx="12" fill="#17375d"/>
+    <rect x="26" y="-145" width="86" height="155" rx="12" fill="#19a89d"/>
+    <rect x="138" y="-105" width="86" height="115" rx="12" fill="#f4b64a"/>
+    <rect x="36" y="-112" width="66" height="18" rx="9" fill="#eaf6ff"/>
+    <rect x="148" y="-72" width="66" height="18" rx="9" fill="#eaf6ff"/>
+  </g>
+  <path d="M0 705c180-70 330-82 500-38s305 67 485 12 370-74 615 2v219H0z" fill="#ffffff" opacity=".24"/>
+</svg>

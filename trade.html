@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ITI trade details, curriculum, apprenticeship, jobs, salary, and downloadable study resources.">
+  <title>Trade Details | ITI Trades Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="ITI Trades Portal home">
+      <img src="assets/logo.png" alt="Institute logo" class="brand-logo">
+      <span class="brand-text">
+        <strong>Government ITI Trades Portal</strong>
+        <small>Skills for careers, industry, and entrepreneurship</small>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="index.html">Trades</a>
+      <a href="#contact">Contact</a>
+      <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch language">తెలుగు</button>
+    </nav>
+  </header>
+
+  <main id="tradeDetail" class="detail-page" aria-live="polite">
+    <section class="detail-hero skeleton">
+      <p>Loading trade details...</p>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div>
+      <strong>Government ITI Trades Portal</strong>
+      <p>Static information portal for ITI and ATC trade exploration.</p>
+    </div>
+  </footer>
+
+  <script src="js/trades-fallback.js"></script>
+  <script src="js/trade.js"></script>
+</body>
+</html>
