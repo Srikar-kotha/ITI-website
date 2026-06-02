@@ -61,8 +61,8 @@
     "salary_en": "Fresher: Rs. 10,000-15,000/month; Mid-level: Rs. 15,000-20,000/month; Experienced: Rs. 2.5-3.5+ LPA",
     "salary_te": "ఫ్రెషర్: నెలకు రూ. 10,000-15,000; మిడ్ లెవెల్: రూ. 15,000-20,000; అనుభవం ఉన్నవారు: సంవత్సరానికి రూ. 2.5-3.5+ లక్షలు",
     "pdfs": {
-      "theory": "assets/pdfs/copa-theory.pdf",
-      "practical": "assets/pdfs/copa-practical.pdf"
+      "theory": "assets/pdfs/copa-tt-nsqf-2022.pdf",
+      "practical": "assets/pdfs/copa-tt-nsqf-2022.pdf"
     },
     "curriculum_sections_en": [
       {
@@ -172,7 +172,16 @@
     ],
     "program_type": "ITI",
     "program_type_en": "ITI Trade",
-    "program_type_te": "ITI ట్రేడ్"
+    "program_type_te": "ITI ట్రేడ్",
+    "pdf_links": [
+      {
+        "title_en": "Trade Theory (NSQF 2022)",
+        "title_te": "ట్రేడ్ థియరీ (NSQF 2022)",
+        "href": "assets/pdfs/copa-tt-nsqf-2022.pdf",
+        "note_en": "Official COPA trade theory textbook",
+        "note_te": "COPA అధికారిక ట్రేడ్ థియరీ పాఠ్యపుస్తకం"
+      }
+    ]
   },
   {
     "id": "electrician",
@@ -250,8 +259,8 @@
     "salary_en": "Fresher: Rs. 12,000-18,000/month; Experienced/licensed: Rs. 25,000-45,000/month",
     "salary_te": "ఫ్రెషర్: నెలకు రూ. 12,000-18,000; అనుభవం/లైసెన్స్ ఉన్నవారు: రూ. 25,000-45,000",
     "pdfs": {
-      "theory": "assets/pdfs/electrician-theory.pdf",
-      "practical": "assets/pdfs/electrician-practical.pdf"
+      "theory": "assets/pdfs/electrician-1st-year-tt-english-2022.pdf",
+      "practical": "assets/pdfs/electrician-2nd-year-tt-2022.pdf"
     },
     "curriculum_sections_en": [
       {
@@ -385,7 +394,23 @@
     ],
     "program_type": "ITI",
     "program_type_en": "ITI Trade",
-    "program_type_te": "ITI ట్రేడ్"
+    "program_type_te": "ITI ట్రేడ్",
+    "pdf_links": [
+      {
+        "title_en": "1st Year Trade Theory",
+        "title_te": "1వ సంవత్సరం ట్రేడ్ థియరీ",
+        "href": "assets/pdfs/electrician-1st-year-tt-english-2022.pdf",
+        "note_en": "Electrician 1st year textbook",
+        "note_te": "ఎలక్ట్రీషియన్ 1వ సంవత్సరం పాఠ్యపుస్తకం"
+      },
+      {
+        "title_en": "2nd Year Trade Theory",
+        "title_te": "2వ సంవత్సరం ట్రేడ్ థియరీ",
+        "href": "assets/pdfs/electrician-2nd-year-tt-2022.pdf",
+        "note_en": "Electrician 2nd year textbook",
+        "note_te": "ఎలక్ట్రీషియన్ 2వ సంవత్సరం పాఠ్యపుస్తకం"
+      }
+    ]
   },
   {
     "id": "stenographer-secretarial-assistant",
@@ -475,8 +500,8 @@
     "salary_en": "Government: Rs. 25,000-45,000/month plus allowances; Private: Rs. 15,000-30,000/month; Experienced: Rs. 50,000+/month in courts or ministries",
     "salary_te": "ప్రభుత్వం: నెలకు రూ. 25,000-45,000 + అలవెన్సులు; ప్రైవేట్: రూ. 15,000-30,000; అనుభవం: కోర్టులు/మంత్రిత్వ శాఖల్లో రూ. 50,000+",
     "pdfs": {
-      "theory": "assets/pdfs/stenographer-secretarial-assistant-theory.pdf",
-      "practical": "assets/pdfs/stenographer-secretarial-assistant-practical.pdf"
+      "theory": "assets/pdfs/stenographer-secretarial-assistant-tt-english-2022.pdf",
+      "practical": "assets/pdfs/stenographer-secretarial-assistant-tt-english-2022.pdf"
     },
     "curriculum_sections_en": [
       {
@@ -632,7 +657,16 @@
     ],
     "program_type": "ITI",
     "program_type_en": "ITI Trade",
-    "program_type_te": "ITI ట్రేడ్"
+    "program_type_te": "ITI ట్రేడ్",
+    "pdf_links": [
+      {
+        "title_en": "Trade Theory (2022)",
+        "title_te": "ట్రేడ్ థియరీ (2022)",
+        "href": "assets/pdfs/stenographer-secretarial-assistant-tt-english-2022.pdf",
+        "note_en": "Stenographer Secretarial Assistant textbook",
+        "note_te": "స్టెనోగ్రాఫర్ సెక్రటేరియల్ అసిస్టెంట్ పాఠ్యపుస్తకం"
+      }
+    ]
   },
   {
     "id": "dress-making",
@@ -714,8 +748,8 @@
     "salary_en": "Fresher: Rs. 10,000-15,000/month; Factory/Boutique: Rs. 18,000-35,000/month; Own boutique: Rs. 25,000-80,000/month depending on orders",
     "salary_te": "ఫ్రెషర్: నెలకు రూ. 10,000-15,000; ఫ్యాక్టరీ/బుటిక్: రూ. 18,000-35,000; స్వంత బుటిక్: ఆర్డర్లపై ఆధారపడి రూ. 25,000-80,000",
     "pdfs": {
-      "theory": "assets/pdfs/dress-making-theory.pdf",
-      "practical": "assets/pdfs/dress-making-practical.pdf"
+      "theory": "assets/pdfs/dress-making-tt-english-2022.pdf",
+      "practical": "assets/pdfs/dress-making-tt-english-2022.pdf"
     },
     "curriculum_sections_en": [
       {
@@ -853,7 +887,16 @@
     ],
     "program_type": "ITI",
     "program_type_en": "ITI Trade",
-    "program_type_te": "ITI ట్రేడ్"
+    "program_type_te": "ITI ట్రేడ్",
+    "pdf_links": [
+      {
+        "title_en": "Trade Theory (2022)",
+        "title_te": "ట్రేడ్ థియరీ (2022)",
+        "href": "assets/pdfs/dress-making-tt-english-2022.pdf",
+        "note_en": "Dress Making trade theory textbook",
+        "note_te": "డ్రెస్ మేకింగ్ ట్రేడ్ థియరీ పాఠ్యపుస్తకం"
+      }
+    ]
   },
   {
     "id": "civil-draughtsman",
@@ -923,8 +966,8 @@
     "salary_en": "Fresher: Rs. 12,000-18,000/month private; Government job: Rs. 25,000-35,000/month plus allowance; Experienced/licensed: Rs. 50,000+/month",
     "salary_te": "ఫ్రెషర్: ప్రైవేట్ లో నెలకు రూ. 12,000-18,000; ప్రభుత్వ ఉద్యోగం: రూ. 25,000-35,000 + అలవెన్స్; అనుభవం/లైసెన్స్: రూ. 50,000+",
     "pdfs": {
-      "theory": "assets/pdfs/civil-draughtsman-theory.pdf",
-      "practical": "assets/pdfs/civil-draughtsman-practical.pdf"
+      "theory": "assets/pdfs/draughtsman-civil-1st-year-tt-english-2022.pdf",
+      "practical": "assets/pdfs/draughtsman-civil-2nd-year-tt-english-2022.pdf"
     },
     "curriculum_sections_en": [
       {
@@ -1050,7 +1093,23 @@
     ],
     "program_type": "ITI",
     "program_type_en": "ITI Trade",
-    "program_type_te": "ITI ట్రేడ్"
+    "program_type_te": "ITI ట్రేడ్",
+    "pdf_links": [
+      {
+        "title_en": "1st Year Trade Theory",
+        "title_te": "1వ సంవత్సరం ట్రేడ్ థియరీ",
+        "href": "assets/pdfs/draughtsman-civil-1st-year-tt-english-2022.pdf",
+        "note_en": "Draughtsman Civil 1st year textbook",
+        "note_te": "డ్రాఫ్ట్స్ మన్ సివిల్ 1వ సంవత్సరం పాఠ్యపుస్తకం"
+      },
+      {
+        "title_en": "2nd Year Trade Theory",
+        "title_te": "2వ సంవత్సరం ట్రేడ్ థియరీ",
+        "href": "assets/pdfs/draughtsman-civil-2nd-year-tt-english-2022.pdf",
+        "note_en": "Draughtsman Civil 2nd year textbook",
+        "note_te": "డ్రాఫ్ట్స్ మన్ సివిల్ 2వ సంవత్సరం పాఠ్యపుస్తకం"
+      }
+    ]
   },
   {
     "id": "cnc",
@@ -1126,8 +1185,8 @@
     "salary_en": "Fresher: Rs. 15,000-22,000/month private; CNC Programmer: Rs. 35,000-60,000/month plus allowance; Experienced/licensed: Rs. 30,000-45,000/month",
     "salary_te": "ఫ్రెషర్: ప్రైవేట్ లో నెలకు రూ. 15,000-22,000; CNC ప్రోగ్రామర్: రూ. 35,000-60,000 + అలవెన్స్; అనుభవం/లైసెన్స్: రూ. 30,000-45,000",
     "pdfs": {
-      "theory": "assets/pdfs/cnc-theory.pdf",
-      "practical": "assets/pdfs/cnc-practical.pdf"
+      "theory": "assets/pdfs/cnc-machining-tech-1st-year-tt.pdf",
+      "practical": "assets/pdfs/machinist-2nd-year-tt-2022.pdf"
     },
     "curriculum_sections_en": [
       {
@@ -1249,7 +1308,23 @@
     ],
     "program_type": "ATC",
     "program_type_en": "ATC Trade",
-    "program_type_te": "ATC ట్రేడ్"
+    "program_type_te": "ATC ట్రేడ్",
+    "pdf_links": [
+      {
+        "title_en": "1st Year Trade Theory",
+        "title_te": "1వ సంవత్సరం ట్రేడ్ థియరీ",
+        "href": "assets/pdfs/cnc-machining-tech-1st-year-tt.pdf",
+        "note_en": "CNC Machining Technician 1st year textbook",
+        "note_te": "CNC మాచినింగ్ టెక్నీషియన్ 1వ సంవత్సరం పాఠ్యపుస్తకం"
+      },
+      {
+        "title_en": "2nd Year Trade Theory",
+        "title_te": "2వ సంవత్సరం ట్రేడ్ థియరీ",
+        "href": "assets/pdfs/machinist-2nd-year-tt-2022.pdf",
+        "note_en": "Machinist 2nd year trade theory textbook used for CNC continuation",
+        "note_te": "CNC కొనసాగింపుకు ఉపయోగించే Machinist 2వ సంవత్సరం ట్రేడ్ థియరీ పాఠ్యపుస్తకం"
+      }
+    ]
   },
   {
     "id": "mpca",
@@ -1414,7 +1489,16 @@
     ],
     "program_type": "ATC",
     "program_type_en": "ATC Trade",
-    "program_type_te": "ATC ట్రేడ్"
+    "program_type_te": "ATC ట్రేడ్",
+    "pdf_links": [
+      {
+        "title_en": "Trade Summary PDF",
+        "title_te": "ట్రేడ్ సారాంశ PDF",
+        "href": "assets/pdfs/mpca-theory.pdf",
+        "note_en": "Generated portal summary PDF",
+        "note_te": "పోర్టల్ రూపొందించిన సారాంశ PDF"
+      }
+    ]
   },
   {
     "id": "edt",
@@ -1472,8 +1556,8 @@
     "salary_en": "Fresher: Rs. 18,000-30,000/month; Experienced/licensed: Rs. 50,000-90,000/month",
     "salary_te": "ఫ్రెషర్: నెలకు రూ. 18,000-30,000; అనుభవం/లైసెన్స్: రూ. 50,000-90,000",
     "pdfs": {
-      "theory": "assets/pdfs/edt-theory.pdf",
-      "practical": "assets/pdfs/edt-practical.pdf"
+      "theory": "assets/pdfs/edt-text-book-scanned.pdf",
+      "practical": "assets/pdfs/edt-text-book-scanned.pdf"
     },
     "curriculum_sections_en": [
       {
@@ -1557,7 +1641,16 @@
     ],
     "program_type": "ATC",
     "program_type_en": "ATC Trade",
-    "program_type_te": "ATC ట్రేడ్"
+    "program_type_te": "ATC ట్రేడ్",
+    "pdf_links": [
+      {
+        "title_en": "EDT Textbook (Scanned)",
+        "title_te": "EDT పాఠ్యపుస్తకం (స్కాన్)",
+        "href": "assets/pdfs/edt-text-book-scanned.pdf",
+        "note_en": "Engineering Design Technology textbook",
+        "note_te": "ఇంజనీరింగ్ డిజైన్ టెక్నాలజీ పాఠ్యపుస్తకం"
+      }
+    ]
   },
   {
     "id": "irdmt",
@@ -1607,8 +1700,8 @@
     "salary_en": "Fresher: Rs. 12,000-18,000/month; Experienced/licensed: Rs. 25,000-45,000/month; Robot programmer/specialist: Rs. 35,000-50,000/month",
     "salary_te": "ఫ్రెషర్: నెలకు రూ. 12,000-18,000; అనుభవం/లైసెన్స్: రూ. 25,000-45,000; రోబోట్ ప్రోగ్రామర్/స్పెషలిస్ట్: రూ. 35,000-50,000",
     "pdfs": {
-      "theory": "assets/pdfs/irdmt-theory.pdf",
-      "practical": "assets/pdfs/irdmt-practical.pdf"
+      "theory": "assets/pdfs/irdmt-tt.pdf",
+      "practical": "assets/pdfs/irdmt-tt.pdf"
     },
     "curriculum_sections_en": [
       {
@@ -1674,7 +1767,16 @@
     ],
     "program_type": "ATC",
     "program_type_en": "ATC Trade",
-    "program_type_te": "ATC ట్రేడ్"
+    "program_type_te": "ATC ట్రేడ్",
+    "pdf_links": [
+      {
+        "title_en": "Trade Theory",
+        "title_te": "ట్రేడ్ థియరీ",
+        "href": "assets/pdfs/irdmt-tt.pdf",
+        "note_en": "Industrial Robotics and Digital Manufacturing Technician textbook",
+        "note_te": "ఇండస్ట్రియల్ రోబోటిక్స్ మరియు డిజిటల్ మాన్యుఫ్యాక్చరింగ్ టెక్నీషియన్ పాఠ్యపుస్తకం"
+      }
+    ]
   },
   {
     "id": "mev",
@@ -1819,7 +1921,16 @@
     ],
     "program_type": "ATC",
     "program_type_en": "ATC Trade",
-    "program_type_te": "ATC ట్రేడ్"
+    "program_type_te": "ATC ట్రేడ్",
+    "pdf_links": [
+      {
+        "title_en": "Trade Summary PDF",
+        "title_te": "ట్రేడ్ సారాంశ PDF",
+        "href": "assets/pdfs/mev-theory.pdf",
+        "note_en": "Generated portal summary PDF",
+        "note_te": "పోర్టల్ రూపొందించిన సారాంశ PDF"
+      }
+    ]
   },
   {
     "id": "virtual-analysis-designs",
@@ -1944,6 +2055,15 @@
     ],
     "program_type": "ATC",
     "program_type_en": "ATC Trade",
-    "program_type_te": "ATC ట్రేడ్"
+    "program_type_te": "ATC ట్రేడ్",
+    "pdf_links": [
+      {
+        "title_en": "Trade Summary PDF",
+        "title_te": "ట్రేడ్ సారాంశ PDF",
+        "href": "assets/pdfs/virtual-analysis-designs-theory.pdf",
+        "note_en": "Generated portal summary PDF",
+        "note_te": "పోర్టల్ రూపొందించిన సారాంశ PDF"
+      }
+    ]
   }
 ]

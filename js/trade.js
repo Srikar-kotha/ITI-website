@@ -52,6 +52,43 @@ function renderSectionGroups(sections, fallbackItems) {
   `).join("");
 }
 
+function itemText(item, key) {
+  return item[`${key}_${state.language}`] || item[`${key}_en`] || "";
+}
+
+function pdfLinks(trade) {
+  if (Array.isArray(trade.pdf_links) && trade.pdf_links.length) {
+    return trade.pdf_links;
+  }
+
+  return [
+    {
+      title_en: "Download Trade Theory",
+      title_te: "ట్రేడ్ థియరీ డౌన్లోడ్",
+      href: trade.pdfs.theory,
+      note_en: "Open study material PDF",
+      note_te: "అధ్యయన PDF తెరవండి"
+    },
+    {
+      title_en: "Download Practical Manual",
+      title_te: "ప్రాక్టికల్ మాన్యువల్ డౌన్లోడ్",
+      href: trade.pdfs.practical,
+      note_en: "Open workshop manual PDF",
+      note_te: "వర్క్ షాప్ మాన్యువల్ PDF తెరవండి"
+    }
+  ];
+}
+
+function renderPdfCards(trade) {
+  return pdfLinks(trade).map((pdf) => `
+    <a class="pdf-card" href="${pdf.href}" target="_blank" rel="noreferrer">
+      <span class="pdf-icon" aria-hidden="true">📘</span>
+      <strong>${itemText(pdf, "title")}</strong>
+      <span>${itemText(pdf, "note")}</span>
+    </a>
+  `).join("");
+}
+
 function getCurrentTrade() {
   const id = new URLSearchParams(window.location.search).get("id") || state.trades[0]?.id;
   return state.trades.find((trade) => trade.id === id);
@@ -126,16 +163,7 @@ function renderTrade() {
       <section class="detail-card">
         <h2>${label("PDF Downloads", "PDF డౌన్లోడ్లు")}</h2>
         <div class="pdf-grid">
-          <a class="pdf-card" href="${trade.pdfs.theory}" target="_blank" rel="noreferrer">
-            <span class="pdf-icon" aria-hidden="true">📘</span>
-            <strong>${label("Download Trade Theory", "ట్రేడ్ థియరీ డౌన్లోడ్")}</strong>
-            <span>${label("Open study material PDF", "అధ్యయన PDF తెరవండి")}</span>
-          </a>
-          <a class="pdf-card" href="${trade.pdfs.practical}" target="_blank" rel="noreferrer">
-            <span class="pdf-icon" aria-hidden="true">📘</span>
-            <strong>${label("Download Practical Manual", "ప్రాక్టికల్ మాన్యువల్ డౌన్లోడ్")}</strong>
-            <span>${label("Open workshop manual PDF", "వర్క్ షాప్ మాన్యువల్ PDF తెరవండి")}</span>
-          </a>
+          ${renderPdfCards(trade)}
         </div>
       </section>
     </div>
