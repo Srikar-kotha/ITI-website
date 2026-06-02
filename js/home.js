@@ -7,6 +7,10 @@ const state = {
   query: ""
 };
 
+// Shared IntersectionObserver for scroll-reveal. Re-built on every renderTrades()
+// because the elements it watches are torn down and recreated.
+let revealObserver = null;
+
 const elements = {
   grid: document.getElementById("tradeGrid"),
   count: document.getElementById("resultCount"),
@@ -66,6 +70,18 @@ function getFilteredTrades() {
 }
 
 function renderTrades() {
+  // Disconnect the prior reveal observer and strip reveal state from any
+  // existing cards/groups so re-renders (search, filter, language) don't
+  // leave them stuck at opacity: 0.
+  if (revealObserver) {
+    revealObserver.disconnect();
+    revealObserver = null;
+  }
+  elements.grid.querySelectorAll(".trade-card, .trade-group").forEach((el) => {
+    el.classList.remove("is-revealed");
+    el.style.removeProperty("--reveal-delay");
+  });
+
   const filtered = getFilteredTrades();
   const itiTrades = state.trades.filter((trade) => trade.program_type === "ITI");
   const atcTrades = state.trades.filter((trade) => trade.program_type === "ATC");
@@ -117,6 +133,114 @@ function renderTrades() {
     renderGroup("ITI", label("ITI Trades", "ITI ట్రేడ్లు"), label("Traditional ITI vocational courses for practical job-ready skills.", "ప్రాక్టికల్ ఉద్యోగ నైపుణ్యాల కోసం సంప్రదాయ ITI వొకేషనల్ కోర్సులు.")),
     renderGroup("ATC", label("ATC Trades", "ATC ట్రేడ్లు"), label("Advanced Technology Centre courses focused on modern industry technologies.", "ఆధునిక పరిశ్రమ టెక్నాలజీలపై దృష్టి పెట్టిన Advanced Technology Centre కోర్సులు."))
   ].join("");
+
+  setupReveal();
+}
+
+function setupReveal() {
+  // Respect reduced motion: make everything visible synchronously, no observer.
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    elements.grid.querySelectorAll(".trade-card, .trade-group").forEach((el) => {
+      el.classList.add("is-revealed");
+    });
+    return;
+  }
+
+  // Apply stagger delays (cards within a group: 60ms; groups: 0/120ms).
+  const groups = elements.grid.querySelectorAll(".trade-group");
+  groups.forEach((group, groupIndex) => {
+    group.style.setProperty("--reveal-delay", `${groupIndex * 120}ms`);
+    const cards = group.querySelectorAll(".trade-card");
+    cards.forEach((card, cardIndex) => {
+      card.style.setProperty("--reveal-delay", `${groupIndex * 120 + cardIndex * 60}ms`);
+    });
+  });
+
+  // Single shared observer watches all .trade-card and .trade-group elements.
+  revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-revealed");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { rootMargin: "0px 0px -10% 0px", threshold: 0.1 }
+  );
+
+  elements.grid.querySelectorAll(".trade-card, .trade-group").forEach((el) => {
+    revealObserver.observe(el);
+  });
+}
+
+function initCountUp() {
+  // Only the three dynamic stat <strong>s animate; data-static ones are skipped.
+  const targets = [elements.total, elements.itiTotal, elements.atcTotal].filter(Boolean);
+  if (!targets.length) return;
+
+  // Respect reduced motion: leave the final values in place, no animation.
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    targets.forEach((el) => el.classList.add("is-counted"));
+    return;
+  }
+
+  // Capture final values, reset to 0, then animate on visibility.
+  const finals = targets.map((el) => {
+    const v = parseInt(el.textContent, 10);
+    el.textContent = "0";
+    el.classList.remove("is-counted");
+    return Number.isFinite(v) ? v : 0;
+  });
+
+  const panel = document.querySelector(".hero-panel");
+  if (!panel) {
+    // No panel to observe — just animate immediately.
+    animateCountUp(targets, finals);
+    return;
+  }
+
+  if (!("IntersectionObserver" in window)) {
+    // Fallback: set final values, skip animation.
+    targets.forEach((el, i) => { el.textContent = String(finals[i]); });
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      if (entries.some((e) => e.isIntersecting)) {
+        obs.disconnect();
+        animateCountUp(targets, finals);
+      }
+    },
+    { threshold: 0.4 }
+  );
+  observer.observe(panel);
+}
+
+function animateCountUp(targets, finals) {
+  const duration = 1100;
+  let rafId = 0;
+  const start = performance.now();
+
+  const step = (now) => {
+    const t = Math.min(1, (now - start) / duration);
+    // ease-out cubic: 1 - (1 - t)^3
+    const eased = 1 - Math.pow(1 - t, 3);
+    targets.forEach((el, i) => {
+      el.textContent = String(Math.round(finals[i] * eased));
+    });
+    if (t < 1) {
+      rafId = requestAnimationFrame(step);
+    } else {
+      targets.forEach((el, i) => { el.textContent = String(finals[i]); });
+      targets.forEach((el) => el.classList.add("is-counted"));
+    }
+  };
+
+  rafId = requestAnimationFrame(step);
+  // Keep a reference in case we ever need to cancel.
+  void rafId;
 }
 
 function bindEvents() {
@@ -147,6 +271,7 @@ async function init() {
   bindEvents();
   state.trades = await loadTrades();
   renderTrades();
+  initCountUp();
 }
 
 init();

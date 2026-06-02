@@ -1388,8 +1388,8 @@
     "salary_en": "Fresher: Rs. 20,000-35,000/month; Experienced/licensed: Rs. 60,000-80,000/month",
     "salary_te": "ఫ్రెషర్: నెలకు రూ. 20,000-35,000; అనుభవం/లైసెన్స్: రూ. 60,000-80,000",
     "pdfs": {
-      "theory": "assets/pdfs/mpca-theory.pdf",
-      "practical": "assets/pdfs/mpca-practical.pdf"
+      "theory": "assets/pdfs/MPC & AT - TT   nsqf level 3.5 (1).pdf",
+      "practical": "assets/pdfs/MPC & AT - TT   nsqf level 3.5 (1).pdf"
     },
     "curriculum_sections_en": [
       {
@@ -1494,7 +1494,7 @@
       {
         "title_en": "Trade Summary PDF",
         "title_te": "ట్రేడ్ సారాంశ PDF",
-        "href": "assets/pdfs/mpca-theory.pdf",
+        "href": "assets/pdfs/MPC & AT - TT   nsqf level 3.5 (1).pdf",
         "note_en": "Generated portal summary PDF",
         "note_te": "పోర్టల్ రూపొందించిన సారాంశ PDF"
       }
@@ -1830,8 +1830,8 @@
     "salary_en": "Fresher: Rs. 15,000-20,000/month; Experienced/licensed: Rs. 22,000-35,000/month",
     "salary_te": "ఫ్రెషర్: నెలకు రూ. 15,000-20,000; అనుభవం/లైసెన్స్: రూ. 22,000-35,000",
     "pdfs": {
-      "theory": "assets/pdfs/mev-theory.pdf",
-      "practical": "assets/pdfs/mev-practical.pdf"
+      "theory": "assets/pdfs/MEV - 1st Year - TT.pdf",
+      "practical": "assets/pdfs/MEV - 1st Year - TT.pdf"
     },
     "curriculum_sections_en": [
       {
@@ -1926,7 +1926,7 @@
       {
         "title_en": "Trade Summary PDF",
         "title_te": "ట్రేడ్ సారాంశ PDF",
-        "href": "assets/pdfs/mev-theory.pdf",
+        "href": "assets/pdfs/MEV - 1st Year - TT.pdf",
         "note_en": "Generated portal summary PDF",
         "note_te": "పోర్టల్ రూపొందించిన సారాంశ PDF"
       }
@@ -1984,8 +1984,8 @@
     "salary_en": "Fresher: Rs. 15,000-20,000/month; Experienced/licensed: Rs. 30,000-60,000/month",
     "salary_te": "ఫ్రెషర్: నెలకు రూ. 15,000-20,000; అనుభవం/లైసెన్స్: రూ. 30,000-60,000",
     "pdfs": {
-      "theory": "assets/pdfs/virtual-analysis-designs-theory.pdf",
-      "practical": "assets/pdfs/virtual-analysis-designs-practical.pdf"
+      "theory": "assets/pdfs/Virtual Analysis and Desiger - 1st Year - TP (2024).pdf",
+      "practical": "assets/pdfs/Virtual Analysis and Desiger - 1st Year - TP (2024).pdf"
     },
     "curriculum_sections_en": [
       {
@@ -2060,7 +2060,7 @@
       {
         "title_en": "Trade Summary PDF",
         "title_te": "ట్రేడ్ సారాంశ PDF",
-        "href": "assets/pdfs/virtual-analysis-designs-theory.pdf",
+        "href": "assets/pdfs/Virtual Analysis and Desiger - 1st Year - TP (2024).pdf",
         "note_en": "Generated portal summary PDF",
         "note_te": "పోర్టల్ రూపొందించిన సారాంశ PDF"
       }
